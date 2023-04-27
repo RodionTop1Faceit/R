@@ -1,0 +1,20 @@
+#include <iostream>
+#include <cmath>
+ 
+using namespace std;
+
+int main()
+{
+    double time, speed, distance,min,sec, time_2;
+    cout << "Вычисление скорости бега: \n";
+    cout << "Введите длину дистанции (метров): \n";
+    cin >> distance;
+    cout << "Введите время (мин.сек): \n";
+    cin >> time;
+    sec = (time -int(time))*100; 
+    min = int(time) * 60;
+    time_2 = min + sec;
+    speed = (distance / time_2 )*3.6;
+    cout << "Дистанция  : " << distance << " м \n";
+    cout << "Время : " << min/60 << " мин  " << sec << " сек "<<" = "<<time_2<<" сек \n";
+    cout << "Скорость : " << speed << " км/ч \n";
